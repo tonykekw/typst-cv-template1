@@ -25,7 +25,7 @@
 #import "./typst-tablex/tablex.typ": tablex, vlinex, rowspanx
 
 // Page and Text Setup
-#set page(paper: "a4", margin: (x: 3cm, y: 2cm)) //"us-letter"
+#set page(paper: "a4", margin: (x: 3cm, y: 1.2cm)) //"us-letter"
 #set text(font: "Fontin", size: 10pt)
 #set par(justify: false, leading: 0.45em)
 
@@ -43,7 +43,7 @@
   h(2.5mm)
   set text(font: "Fontin SmallCaps", size: 24pt)
   [#last_name]
-  v(7.5mm)
+  v(3mm)
 }
 
 // Setting Heading as Section Titles
@@ -59,13 +59,17 @@
 
 #let info(info_dict: none) = {
   grid(
-    columns: (30%, auto),
+    columns: (30pt,1fr, auto),
     gutter: 3mm,
+    align(left)[
+    #image("4.jpg", width: 250%)],
+
     align(right)[
       #for key in info_dict.keys() {
         sc(key); linebreak()
       }
-    ],
+    ] ,
+
     align(left)[
       #for value in info_dict.values() {
         value; linebreak()
@@ -155,6 +159,7 @@
     )
 }
 
+// Full Name Title Function
 
 
 // ==================================================
@@ -166,36 +171,27 @@
   last_name: "Stan",  // this will be SmallCaps, none to omit
 )
 
+
+
+//image("4.jpg", width: 20%)
+
 = Personal Data
 
 #info(
   info_dict: (
-    "Place and Date of Birth:": "Romania – January 29, 2000",
+    "Nationality:": "Romanian, Italian" ,
+     "Date of Birth:": "January 29, 2000" ,
     "Address:"                : "Padova, Italy", 
     "Phone:"                  : link("tel:+39 (IT) 349 7277038"),
     "Email:"                  : link("mailto:stanantonionicolae@gmail.com"),
+    "Description:"   :"Hi! I am a recent graduate in Computer Science ",
+    " ": "with a strong academic background and a passion for technology. ",
+    "  " : "with a strong academic background and a passion for technology. "
   )
 )
 
 = Work Experience
 
-
-#work(
-  date_range: list(marker: [],
-    [November 2021],   // start date
-    [#to()],      // comment this for single date
-    [June 2022],   // end date - comment this for single date
-  ),
-  position: "System manager",
-  org: "Ambulatorio San Massimo (Hospital)",
-  addr: "Padova",
-  desc: list(
-    [Managing Virtual Machines on Linux.],
-    [Taking care of working computers.],
-    [Assisting company employees with tecnology.],
-    [Resolving unexpected system fall downs.],
-  ),
-)
 
 #work(
   date_range: list(marker: [],
@@ -217,26 +213,21 @@
   ),
 )
 
-
-= Digital Skills
-
-#skill(
-  skill_dict: (
-    "Tools:"  : "Eclipse, WebStorm, Visual Studio, Git, PgAdming, Postman",
-    "Development:"  : "Php, Java, C++, Python, Javascipt, HTML, CSS , PostgreSQL , MySQL",
-    "Frameworks:" : "Spring, Angular ",
-     "OS:" : "Linux , Windows "
-  )
-)
-
-= Language Skills
-
-#skill(
-  skill_dict: (
-    "Italian:"  : "Native",
-    "Romanian:"  : "Native",
-    "English:"      : "C1", 
-  )
+#work(
+  date_range: list(marker: [],
+    [November 2021],   // start date
+    [#to()],      // comment this for single date
+    [June 2022],   // end date - comment this for single date
+  ),
+  position: "System manager",
+  org: "Ambulatorio San Massimo (Hospital)",
+  addr: "Padova",
+  desc: list(
+    [Managing Virtual Machines on Linux.],
+    [Taking care of working computers.],
+    [Assisting company employees with tecnology.],
+    [Resolving unexpected system fall downs.],
+  ),
 )
 
 = Education
@@ -299,6 +290,29 @@
 
   ),
 )
+
+
+= Digital Skills
+
+#skill(
+  skill_dict: (
+    "Tools:"  : "Eclipse, WebStorm, Visual Studio, Git, PgAdming, Postman",
+    "Development:"  : "Php, Java, C++, Python, Javascipt, HTML, CSS , PostgreSQL , MySQL",
+    "Frameworks:" : "Spring, Angular ",
+     "OS:" : "Linux , Windows "
+  )
+)
+
+= Language Skills
+
+#skill(
+  skill_dict: (
+    "Italian:"  : "Native",
+    "Romanian:"  : "Native",
+    "English:"      : "C1", 
+  )
+)
+
 
 // ==================================================
 // End Document
