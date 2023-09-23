@@ -1,7 +1,7 @@
 // ==================================================
 // 
 // Typst Resume/CV Template
-// https://github.com/vaibhavjhawar/typst-cv-template1
+//
 // 
 // Inspired by Alessandro Plasmati's Graduate CV LaTex template
 // 
@@ -21,7 +21,8 @@
 // ==================================================
 
 // tablex Library for Customizing Vertical Lines in Table
-#import "tablex.typ": tablex, vlinex, rowspanx
+
+#import "./typst-tablex/tablex.typ": tablex, vlinex, rowspanx
 
 // Page and Text Setup
 #set page(paper: "a4", margin: (x: 3cm, y: 2cm)) //"us-letter"
@@ -161,81 +162,97 @@
 // ==================================================
 
 #title(
-  first_name: "Firstname",   // this will be Sentence Case, none to omit
-  last_name: "Lastname",  // this will be SmallCaps, none to omit
+  first_name: "Antonio Nicolae",   // this will be Sentence Case, none to omit
+  last_name: "Stan",  // this will be SmallCaps, none to omit
 )
 
 = Personal Data
 
 #info(
   info_dict: (
-    "Place and Date of Birth:": "Lorem, Amet – Jan 12, 1234",
-    "Address:"                : "Ipsum, XY – 01234 ABC", 
-    "Phone:"                  : link("tel:123456789"),
-    "Email:"                  : link("mailto:email@email.com"),
+    "Place and Date of Birth:": "Romania – January 29, 2000",
+    "Address:"                : "Padova, Italy", 
+    "Phone:"                  : link("tel:+39 (IT) 349 7277038"),
+    "Email:"                  : link("mailto:stanantonionicolae@gmail.com"),
   )
 )
 
 = Work Experience
 
+
 #work(
   date_range: list(marker: [],
-    [feb 1000],   // start date
+    [November 2021],   // start date
     [#to()],      // comment this for single date
-    [present],   // end date - comment this for single date
+    [June 2022],   // end date - comment this for single date
   ),
-  position: "Senior Software Engineer",
-  org: "Some Software Company",
-  addr: "Dolor, Sit Amet",
+  position: "System manager",
+  org: "Ambulatorio San Massimo (Hospital)",
+  addr: "Padova",
   desc: list(
-    [Lorem ipsum dolor sit amet, consectetur adipiscing elit.],
-    [sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.],
-    [Ut enim ad minim veniam, quis nostrud exercitation ullamco.],
-    [Laboris nisi ut aliquip ex ea commodo consequat, duis aute irure.],
+    [Managing Virtual Machines on Linux.],
+    [Taking care of working computers.],
+    [Assisting company employees with tecnology.],
+    [Resolving unexpected system fall downs.],
   ),
 )
 
 #work(
   date_range: list(marker: [],
-    [jan 1000],   // start date
+    [July 2023],   // start date
     [#to()],      // comment this for single date
-    [feb 1000],   // end date - comment this for single date
+    [September 2023],   // end date - comment this for single date
   ),
-  position: "Junior Software Engineer",
-  org: "Some Software Company",
-  addr: "Dolor, Sit Amet",
+  position: "Junior Software Developer Internship",
+  org: "Sync Lab S.r.l.  ",
+  addr: "Padova",
   desc: list(
-    [Dolor in reprehenderit in voluptate velit esse cillum dolore eu.],
-    [Fugiat nulla pariatur, excepteur sint occaecat cupidatat non.],
-    [Proident, sunt in culpa qui officia deserunt mollit anim id est laborum.],
+    [Back-end development with Java Spring.],
+    [Front-end development with Angular.],
+    [Managing relational database with PostgreSQL and Jpa Data.],
+    [Implementing CRUD operation to manipulate data.],
+    [Using HTTP methods through Postman.],
+    [API REST integration.]
+
   ),
 )
 
-= Skills
+
+= Digital Skills
 
 #skill(
   skill_dict: (
-    "Lectus Sit:"  : "Amet, Placerat, IN, Egestas, Erat, Imperdiet, Euismod",
-    "Nisi Porta:"  : "Lorem, Mollis, Aliquam, UT, Porttitor, Loa, Diam",
-    "Tempor:"      : "Ipsum, Faucibus, Vitae, Aliquet, NEC", 
-    "Ullamcorper:" : "Sitamet, Risus, Nullam, Felis, Eget, Nunc, Lobortis, Mattis",
+    "Tools:"  : "Eclipse, WebStorm, Visual Studio, Git, PgAdming, Postman",
+    "Development:"  : "Php, Java, C++, Python, Javascipt, HTML, CSS , PostgreSQL , MySQL",
+    "Frameworks:" : "Spring, Angular ",
+     "OS:" : "Linux , Windows "
+  )
+)
+
+= Language Skills
+
+#skill(
+  skill_dict: (
+    "Italian:"  : "Native",
+    "Romanian:"  : "Native",
+    "English:"      : "C1", 
   )
 )
 
 = Education
 
 #edu(
-  degree: "PhD in Physics",
-  grade: "99%",
-  uni: "University of Lorem Ipsum",
-  addr: "Dolor, Sit Amet",
+  degree: "Bachelor degree in Computer Science",
+  // grade: "99%",
+  uni: "Università degli Studi di Padova",
+  addr: "Padova, Italy",
   date_range: list(marker: [],
-    [1905],   // start date
-    // [#to()],      // uncomment this for date range
-    // [feb 1000],   // end date - uncomment this for date range
+    [Oct 2019],   // start date
+     [#to()],      // uncomment this for date range
+     [Sept 2023],   // end date - uncomment this for date range
   ),
 )
-
+/*
 #edu(
   degree: "Master of Science in Physics",
   grade: "GPA 3.9/4.0",
@@ -247,38 +264,39 @@
     [1890],   // end date - uncomment this for date range
   ),
 )
-
+*/
 = Projects
 
 #project(
   date_range: list(marker: [],
-    [jan 1000],   // start date
+    [dec 2020],   // start date
     [#to()],      // comment this for single date
-    [feb 1000],   // end date - comment this for single date
+    [march 2021],   // end date - comment this for single date
   ),
-  title: "My Project 1 Title",
-  org: "This is the desription of my project",
-  addr: "Dolor, Sit Amet",
+  title: "Cinema Site",
+  org: "College project",
+  addr: "Web Development",
   desc: list(
-    [Lorem ipsum dolor sit amet, consectetur adipiscing elit.],
-    [sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.],
-    [Ut enim ad minim veniam, quis nostrud exercitation ullamco.],
+    [Php development],
+    [HTML & CSS ],
+    [Relational databases with MySQL.],
   ),
 )
 
 #project(
   date_range: list(marker: [],
-    [jan 1000],   // start date
+    [oct 2022],   // start date
     [#to()],      // comment this for single date
-    [feb 1000],   // end date - comment this for single date
+    [jun 2023],   // end date - comment this for single date
   ),
-  title: "My Project 2 Title",
-  org: "My organization name",
-  addr: "Dolor, Sit Amet",
+  title: "SmartLog Viewer/Statistics",
+  org: "College project",
+  addr: "Software Engineer",
   desc: list(
-    [Lorem ipsum dolor sit amet, consectetur adipiscing elit.],
-    [sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.],
-    [Ut enim ad minim veniam, quis nostrud exercitation ullamco.],
+    [React development.],
+    [Documentation writing & design pattern structure.],
+    [Docker.],
+
   ),
 )
 
