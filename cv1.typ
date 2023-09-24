@@ -43,7 +43,7 @@
   h(2.5mm)
   set text(font: "Fontin SmallCaps", size: 24pt)
   [#last_name]
-  v(3mm)
+  v(2mm)
 }
 
 // Setting Heading as Section Titles
@@ -184,9 +184,12 @@
     "Address:"                : "Padova, Italy", 
     "Phone:"                  : link("tel:+39 (IT) 349 7277038"),
     "Email:"                  : link("mailto:stanantonionicolae@gmail.com"),
-    "Description:"   :"Hi! I am a recent graduate in Computer Science ",
-    " ": "with a strong academic background and a passion for technology. ",
-    "  " : "with a strong academic background and a passion for technology. "
+    "About me:"   :"Hi! I am a recent honors college graduate in Computer Science with a ",
+    " ": "strong academic background and a passion for technology. ",
+    "    ": "I am currently searching for an entry-level position as a junior",  "     ": "developer in order to gain experience in various fields.", 
+       "  ": "To be fairly honest, just a nerd trying to learn new things and ",
+    "   ": "make his way into the world.",
+
   )
 )
 
