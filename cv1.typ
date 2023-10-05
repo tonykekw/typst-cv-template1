@@ -60,9 +60,9 @@
 #let info(info_dict: none) = {
   grid(
     columns: (30pt,1fr, auto),
-    gutter: 3mm,
+    gutter: 1mm,
     align(left)[
-    #image("4.jpg", width: 250%)],
+    #image("4.jpg", width: 240%)],
 
     align(right)[
       #for key in info_dict.keys() {
@@ -180,15 +180,15 @@
 #info(
   info_dict: (
     "Nazionalità:": "Italiana" ,
-     "Data di nascita:": "January 29, 2000" ,
+    "Data di nascita:": "29 Gennaio, 2000" ,
     "Indirizzo:"                : "Padova, Italy", 
     "Telefono:"                  : link("tel:+39 (IT) 349 7277038"),
     "Email:"                  : link("mailto:stanantonionicolae@gmail.com"),
-    "Presentazione:"   :"Hi! I am a recent honors college graduate in Computer Science with a ",
-    " ": "strong academic background and a passion for technology. ",
-    "    ": "I am currently searching for an entry-level position as a junior",  "     ": "developer in order to gain experience in various fields.", 
-       "  ": "To be fairly honest, just a nerd trying to learn new things and ",
-    "   ": "make his way into the world.",
+    "Presentazione:"   :"Salve! Sono un neolaureato in Scienze Informatiche con  ",
+    " ": "una forte formazione accademica e grande passione per la tecnologia. ",
+    "    ": "Attualmente sono in ricerca di una posizione introduttiva come",  "     ": "sviluppatore software per poter accumulare esperienza in vari campi.", 
+       "  ": "Per essere onesto, soltanto un nerd che cerca di imparare cose nuove e ",
+    "   ": "farsi strada nel mondo.",
 
   )
 )
@@ -310,9 +310,9 @@
 
 #skill(
   skill_dict: (
-    "Italian:"  : "Madrelingua",
-    "Romanian:"  : "Madrelingua",
-    "English:"      : "C1", 
+    "Italiano:"  : "Madrelingua",
+    "Romeno:"  : "Madrelingua",
+    "Inglese:"      : "C1", 
   )
 )
 
