@@ -175,16 +175,16 @@
 
 //image("4.jpg", width: 20%)
 
-= Personal Data
+= Dati Personali
 
 #info(
   info_dict: (
-    "Nationality:": "Romanian, Italian" ,
-     "Date of Birth:": "January 29, 2000" ,
-    "Address:"                : "Padova, Italy", 
-    "Phone:"                  : link("tel:+39 (IT) 349 7277038"),
+    "Nazionalità:": "Italiana" ,
+     "Data di nascita:": "January 29, 2000" ,
+    "Indirizzo:"                : "Padova, Italy", 
+    "Telefono:"                  : link("tel:+39 (IT) 349 7277038"),
     "Email:"                  : link("mailto:stanantonionicolae@gmail.com"),
-    "About me:"   :"Hi! I am a recent honors college graduate in Computer Science with a ",
+    "Presentazione:"   :"Hi! I am a recent honors college graduate in Computer Science with a ",
     " ": "strong academic background and a passion for technology. ",
     "    ": "I am currently searching for an entry-level position as a junior",  "     ": "developer in order to gain experience in various fields.", 
        "  ": "To be fairly honest, just a nerd trying to learn new things and ",
@@ -193,50 +193,50 @@
   )
 )
 
-= Work Experience
+= Esperienze lavorative
 
 
 #work(
   date_range: list(marker: [],
-    [July 2023],   // start date
+    [Luglio 2023],   // start date
     [#to()],      // comment this for single date
-    [September 2023],   // end date - comment this for single date
+    [Settembre 2023],   // end date - comment this for single date
   ),
-  position: "Junior Software Developer Internship",
+  position: "Stage Junior Software Developer",
   org: "Sync Lab S.r.l.  ",
   addr: "Padova",
   desc: list(
-    [Back-end development with Java Spring.],
-    [Front-end development with Angular.],
-    [Managing relational database with PostgreSQL and Jpa Data.],
-    [Implementing CRUD operation to manipulate data.],
-    [Using HTTP methods through Postman.],
-    [API REST integration.]
+    [Sviluppo Back-end con Java Spring.],
+    [Sviluppo Front-end con Angular.],
+    [Gestione di database relazionali con PostgreSQL e Jpa Data.],
+    [Implementazione di operazioni CRUD per la manipolazione dei dati.],
+    [Utilizzo di metodi HTTP tramite Postman.],
+    [Integrazione API REST.]
 
   ),
 )
 
 #work(
   date_range: list(marker: [],
-    [November 2021],   // start date
+    [Novembre 2021],   // start date
     [#to()],      // comment this for single date
-    [June 2022],   // end date - comment this for single date
+    [Giugno 2022],   // end date - comment this for single date
   ),
-  position: "System manager",
-  org: "Ambulatorio San Massimo (Hospital)",
+  position: "Tecnico informatico",
+  org: "Ambulatorio San Massimo",
   addr: "Padova",
   desc: list(
-    [Managing Virtual Machines on Linux.],
-    [Taking care of working computers.],
-    [Assisting company employees with tecnology.],
-    [Resolving unexpected system fall downs.],
+    [Gestione di macchine virtuali su Linux.],
+    [Configurazione dei computer lavorativi.],
+    [Assistenza agli impiegati lavorativi con problemi tecnici.],
+    [Risoluzioni di crash del sistema.],
   ),
 )
 
-= Education
+= Educazione
 
 #edu(
-  degree: "Bachelor degree in Computer Science",
+  degree: "Laurea triennale in Scienze Informatiche",
   // grade: "99%",
   uni: "Università degli Studi di Padova",
   addr: "Padova, Italy",
@@ -259,7 +259,7 @@
   ),
 )
 */
-= Projects
+= Progetti
 
 #project(
   date_range: list(marker: [],
@@ -268,12 +268,12 @@
     [march 2021],   // end date - comment this for single date
   ),
   title: "Cinema Site",
-  org: "College project",
+  org: "Progetto universitario",
   addr: "Web Development",
   desc: list(
-    [Php development],
+    [Sviluppo con Php ],
     [HTML & CSS ],
-    [Relational databases with MySQL.],
+    [Database relazionali con MySQL.],
   ),
 )
 
@@ -284,34 +284,34 @@
     [jun 2023],   // end date - comment this for single date
   ),
   title: "SmartLog Viewer/Statistics",
-  org: "College project",
+  org: "Progetto universitario",
   addr: "Software Engineer",
   desc: list(
-    [React development.],
-    [Documentation writing & design pattern structure.],
+    [Sviluppo con React.],
+    [Documentazione & design pattern structure.],
     [Docker.],
 
   ),
 )
 
 
-= Digital Skills
+= Competenze informatiche
 
 #skill(
   skill_dict: (
-    "Tools:"  : "Eclipse, WebStorm, Visual Studio, Git, PgAdming, Postman",
-    "Development:"  : "Php, Java, C++, Python, Javascipt, HTML, CSS , PostgreSQL , MySQL",
+    "Strumenti:"  : "Eclipse, WebStorm, Visual Studio, Git, PgAdming, Postman",
+    "Sviluppo:"  : "Php, Java, C++, Python, Javascipt, HTML, CSS , PostgreSQL , MySQL",
     "Frameworks:" : "Spring, Angular ",
      "OS:" : "Linux , Windows "
   )
 )
 
-= Language Skills
+= Competenze linguistiche
 
 #skill(
   skill_dict: (
-    "Italian:"  : "Native",
-    "Romanian:"  : "Native",
+    "Italian:"  : "Madrelingua",
+    "Romanian:"  : "Madrelingua",
     "English:"      : "C1", 
   )
 )
